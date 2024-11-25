@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/producto.css">
+</head>
+<body>
+    <header>
+        <div class="container-logo">
+            <a href="#"><img id="logo" src="img/logo/logo-rosa.png" alt="Logo de la compañía"></a>
+        </div>
+        <div class="container-usuario">
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Perfil</a></li>
+                <li><button id="icono-modo" onclick="cambiar_modo()"><img id="img-modo" src="img/icono/diurno-negro.png" alt=""></button></li>
+                <li><button id="icono-contraste" onclick="cambiar_contraste()"><img id="img-contraste" src="img/icono/contraste-negro.png" alt=""></button></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <nav class="nav-principal">
+        <ul>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Regalos</a></li>
+            <li><a href="#">Historia</a></li>
+            <li><a href="#">Tiendas</a></li>
+        </ul>
+    </nav>
+
+    <aside>
+        <div class="aside-busqueda">
+            <!-- <input type="text" name="busqueda" id="busqueda" placeholder="Producto"> -->
+            <button type="submit">Filtrar</button>
+        </div>
+        <div class="aside-opciones">
+            <ul>
+                <li><a href="#">Mochi</a></li>
+                <li><a href="#">Dorayaki</a></li>
+                <li><a href="#">Catella</a></li>
+                <li><a href="#">Dango</a></li>
+                <li><a href="#">Kakigori</a></li>
+                <li><a href="#">Anmitsu</a></li>
+                <li><a href="#">Taiyaki</a></li>
+                <li><a href="#">Yokan</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <main>
+        
+        
+        <h1>Mochi de fresa</h1>
+        <div class="contenedor-imagen">
+            
+            <img src="img/producto/producto.png" alt="mochi de fresa">
+    
+        </div>
+        <div class="contenedor-precio">
+            <p>2.5€</p>
+            <button id="add-cesta">Añadir a la cesta</button>
+            <button id="comprar">Comprar</button>
+        </div>
+        <div>
+            <h2>Descripción</h2>
+            <p class="texto">
+                
+                El mochi es un dulce japonés hecho de arroz glutinoso machacado y moldeado en forma de bolitas o figuras. 
+                Se rellena de pasta de judía dulce, frutas o helado. 
+                Es un postre muy popular en Japón y se consume en ocasiones especiales como el año nuevo.
+            </p>
+            
+        </div>
+        <div class="alergenos">
+            <h2>Alérgenos</h2>
+            <ul>
+                <li>Gluten</li>
+                <li>Frutos secos</li>
+                <li>Leche</li>
+                <li>Huevo</li>
+            </ul>
+            
+        </div>
+    </main>
+
+    <footer>
+        <nav class="nav-footer">
+            <ul>
+                <li><strong>Legal</strong></li>
+                <li><a href="#">Condiciones de Contratación</a></li>
+                <li><a href="#">Condiciones de Uso Web</a></li>
+                <li><a href="#">Aviso Legal</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Configurar Cookies</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-footer">
+            <ul>
+                <li><strong>Ayuda</strong></li>
+                <li><a href="#">Cómo Comprar</a></li>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Devoluciones</a></li>
+                <li><a href="#">Bases Promocionales</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-footer">
+            <ul>
+                <li><strong>Nosotros</strong></li>
+                <li><a href="#">Quiénes Somos</a></li>
+                <li><a href="#">Misión, Visión y Valores</a></li>
+                <li><a href="#">Tiendas</a></li>
+            </ul>
+        </nav>
+    </footer>
+        <script src="script/script.js"></script>
+        <script src="script/color.js"></script>
+        <!-- <script src="script/contraste.js"></script> -->
+
+</body>
+
+</html>
