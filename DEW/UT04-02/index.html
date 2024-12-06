@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <h1>Formulario</h1>
+        <hr>
+    
+        <form novalidate action="https://www.w3schools.com/action_page.php" method="post" >
+            <fieldset>
+                <legend>Datos usuario</legend>
+        
+                <div class="username">
+                    <label for="NombreUsuario">Nombre de usuario</label>
+                    <div class="input">
+                        <input type="text" name="NombreUsuario" id="NombreUsuario" required minlength="4" maxlength="15" class="datosPersonales">
+                    </div>
+                </div>
+        
+                <div>
+                    <label for="Contrasena">Contraseña</label>
+                    <div class="input">
+                        <input type="password" name="Contrasena" id="Contrasena" required  pattern="[0-9]{8}" class="datosPersonales">
+                        <div>
+                            <input type="checkbox" name="showpass" id="showpass">
+                            <label for="showpass">Mostrar contraseña</label>
+                        </div>
+                    </div>
+                </div>
+        
+
+            </fieldset>
+        
+            <fieldset >
+                <legend>Datos personales</legend>
+        
+                <div>
+                    <label for="Nombre">Nombre</label>
+                    <div class="input">
+                        <input type="text" name="Nombre" id="Nombre" placeholder="Nombre" required minlength="4" maxlength="15" >
+                    </div>
+                </div>
+        
+                <div>
+                    <label for="Apellidos">Apellidos</label>
+                    <div class="input">
+                        <input type="text" name="Apellidos" id="Apellidos" placeholder="Apellidos" required minlength="4" maxlength="15" class="datosPersonales">
+                    </div>
+                </div>
+        
+                <div>
+                    <label for="Telefono">Teléfono</label>
+                    <div class="input">
+                        <input type="tel" name="Telefono" id="Telefono" placeholder="(+34)922123123" required pattern = "^\(\+34\)\d{9}$" class="datosPersonales" >
+                    </div>
+                </div>
+        
+                <div>
+                    <label for="CodigoPostal">Código Postal</label>
+                    <div class="input">
+                        <input type="number" name="CodigoPostal" id="CodigoPostal" placeholder="38XXX" required pattern="[0-9]{5}" class="datosPersonales">
+                    </div>
+                </div>
+        
+                <div class="identificacion">
+                    <div>
+                        <label for="TipoDocumento">DNI/NIE</label>
+                            <select name="TipoDocumento" id="TipoDocumento">
+                                <option value="dni" selected>DNI</option>
+                                <option value="nie">NIE</option>
+                            </select>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="DniNie" id="DniNie" placeholder="00000000X" pattern="^([X-Z]\d{7}[A-Za-z]|\d{8}[A-Za-z])$" required class="datosPersonales">
+                    </div>
+                </div>
+        
+                <div>
+                    <p>Crear cuenta como:</p>
+                    <input type="radio" name="CuentaComo" id="cuenta_particular" value="particular" required>
+                    <label for="cuenta_particular">Particular</label>
+                    <input type="radio" name="CuentaComo" id="cuenta_empresa" value="empresa" required>
+                    <label for="cuenta_empresa">Empresa</label>
+                </div>
+        
+                <div>
+                    <label for="AnioNacimiento">Año de nacimiento</label>
+                    <div class="input">
+                        <select id="AnioNacimiento" name="AnioNacimiento">
+                            <option value="2010" selected> 2010</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="aficiones">
+                    <p>Elige tus aficiones:</p>
+                    <input type="checkbox" id="music" value="MU">
+                    <label for="music">Música</label>
+                    <input type="checkbox"  id="deporte" value="DE">
+                    <label for="deporte">Deporte</label>
+                    <input type="checkbox" id="games" value="VI">
+                    <label for="games">Video juegos</label>
+                    <input type="checkbox" id="diy" value="MA">
+                    <label for="diy">Manualidades</label>
+                    <input type="checkbox" id="art" value="AR">
+                    <label for="art">Artes</label>
+                    <input type="checkbox" id="book" value="LE">
+                    <label for="book">Lectura</label>
+
+                    <div class="input">
+                        <input type="text" hidden id="Aficiones" name="Aficiones" >
+                    </div>
+                </div>
+            </fieldset>
+        
+            <fieldset class="review">
+                <legend>Datos Publicación</legend>
+        
+                <div>
+                    <label for="PublicacionTitulo">Título</label>
+                    <div class="input">
+                        <input name="PublicacionTitulo" type="text" id="PublicacionTitulo" maxlength="15" required>
+                    </div>
+                    <p id="letras-titulo"></p>
+                </div>
+        
+                <div>
+                    <label for="PublicacionDescripcion">Descripción</label>
+                    <div class="inpu">
+                        <textarea name="PublicacionDescripcion" id="PublicacionDescripcion" minlength="4" maxlength="120" required></textarea>
+                    </div>
+                    <p id="letras-descripcion"></p>
+                </div>
+            </fieldset>
+        
+            <div>
+                <input id="enviar" type="submit" value="Enviar a w3school">
+            </div>
+        </form>
+    </div>
+    
+    <div id="form-validations">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

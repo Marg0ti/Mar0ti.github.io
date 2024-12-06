@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    justify-content: start;
+  }
+  p{
+    margin: 0;
+  }
+  
+  .form {
+    
+    width: 50%;
+  }
+  
+  .review{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    
+    input {
+      margin-bottom: 1em;
+      padding: 0.5em;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+  
+    }
+   
+  
+    #form-validations{
+      display: flex;
+      flex-direction: column;
+      
+      margin-top: 4em;
+      justify-content: space-around;
+    }
+  
+    input:invalid {
+      border-color: red;
+    }
+    textarea:invalid {
+      border-color: red;
+    }
+    input[type="radio"]:invalid , input[type="checkbox"]:invalid {
+      outline: 2px solid red;
+    }
+  
+    span {
+      color: red;
+      font-size: 0.8em;
+      display: block;
+      margin-top: -0.5em;
+      margin-bottom: 1em;
+    }
+  
+    input:valid {
+      border-color: black;
+    }
+    textarea:valid {
+      border-color: black;
+    }
+    input[type="radio"]:valid , .aficiones input[type="checkbox"]:valid {
+      outline: none;
+    }
+  
+    .review > div > p{
+      color: grey;
+      font-size: 0.8em;
+      display: inline;
+    }
+  
+    
+  
+    #enviar{
+      border-color: black;
+      background-color: white;
+    }
+  
+    .input  {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    fieldset  {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .identificacion{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    textarea{
+      width: 100%;
+      height: 60px;
+    }
+  
+  
+    .datosPersonales {
+      width: 220px;
+      margin: 0 2rem;
+    }
+    
