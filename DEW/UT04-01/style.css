@@ -1,3 +1,13 @@
+body {
+  display: flex;
+  justify-content: start;
+}
+
+.form {
+  
+  width: 48%;
+}
+
 .review{
     display: flex;
     flex-direction: column;
@@ -12,8 +22,26 @@
     border: 2px solid #ccc;
     border-radius: 4px;
   }
-  
-  
+ 
+
+  #form-validations{
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 4em;
+    justify-content: space-around;
+  }
+
+  input:invalid {
+    border-color: red;
+  }
+  textarea:invalid {
+    border-color: red;
+  }
+  input[type="radio"]:invalid , input[type="checkbox"]:invalid {
+    outline: 2px solid red;
+  }
+/*   
   input:valid {
     border-color: green;
     background-color: #eaffea;
@@ -34,7 +62,7 @@
   textarea:invalid {
     border-color: red;
     background-color: #ffecec;
-  }
+  } */
   
 
   #enviar{
