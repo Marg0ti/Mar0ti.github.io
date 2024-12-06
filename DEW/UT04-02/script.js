@@ -117,11 +117,14 @@ DOM.enviar.addEventListener("click", (e) => {
         mensajePersonalizado(DOM.aficiones, "Debes seleccionar al menos dos opciones");
         let mensajeCheckbox= "";
         checkboxes.forEach(x => {
-            x.setCustomValidity("No válido");
+            //x.createMessageError(x, x.validationMessage);
             x.classList.add('invalid');
-            mensajeCheckbox = x.validationMessage;
+   
+            //mensajeCheckbox = x.validationMessage;
         });
-        DOM.validation.appendChild(createMessageError( DOM.aficiones.name , mensajeCheckbox));
+        //DOM.validation.appendChild(createMessageError( DOM.aficiones.name , mensajeCheckbox));
+        //No tiene un mensaje de validación porque en el checkbox no hay ni pattern, min, max, required, etc.
+        DOM.showpass.classList.add('valid');
         isValid = false;
     }else{
         checkboxes.forEach(x => {
